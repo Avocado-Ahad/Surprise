@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Be My Valentine 💖</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    .card {
+      background: white;
+      width: 90%;
+      max-width: 420px;
+      border-radius: 20px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      color: #e63946;
+      margin-bottom: 10px;
+
+    }
+
+    p {
+      color: #444;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .question {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #222;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 12px;
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+    }
+
+    .yes {
+      background: #e63946;
+      color: white;
+    }
+
+    .no {
+      background: #f1f1f1;
+      color: #444;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    .photo {
+        width: 100%;
+        max-height: 260px;
+        object-fit: cover;
+        border-radius: 16px;
+        margin-bottom: 18px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Hey Love 💖</h1>
+
+     <img 
+        src="https://share.icloud.com/photos/0eccUanl2OCGS8ew5doTMT82Q" 
+        alt="Us ❤️" 
+        class="photo"
+    />
+
+    <p>
+      I’ll be honest… I was never really the biggest fan of Valentine’s Day.
+      Not because I don’t believe in love — but because I was a conspiracy theorist
+      believing that the day was probably eveil and we were celebrating it without understanding, 
+      until I read the story of St. Valentine.
+    </p>
+
+    <p>
+      From the moment we became boyfriend and girlfriend. I wanted to celebrate us every single day
+      From that day, celebrating love — celebrating <strong>YOU CUTIE</strong> —
+      I realised that I want to celebrate my person Sharon Runyararo Chitaunhike
+      every single moment I can get for as long as I am alive I want her to know she is special to me always.
+    </p>
+
+    <p>
+      I don’t want just a day.  
+      I want moments, laughter, memories… and this one with you too.
+    </p>
+
+    <div class="question">
+      Will you be my Valentine? 💌
+    </div>
+
+    <button class="yes" onclick="sendAnswer('YES 💖')">
+      Yes 💖
+    </button>
+
+    <button class="no" onclick="sendAnswer('NO 🙈')">
+      No 🙈
+    </button>
+
+    <div class="footer">
+      Made with love, just for you Baby❤️
+    </div>
+  </div>
+
+  <script>
+    const yourWhatsAppNumber = "263789488156";
+
+    function sendAnswer(answer) {
+      const message = encodeURIComponent(
+        "Hey love 💕\n\nMy answer is: " + answer +
+        "\n\nI saw your Valentine message and it made me smile ❤️"
+      );
+
+      const whatsappLink = `https://wa.me/${yourWhatsAppNumber}?text=${message}`;
+      window.location.href = whatsappLink;
+    }
+  </script>
+
+</body>
+</html>
